@@ -198,6 +198,11 @@ PRODUCT_PACKAGES += \
     fakelogprint \
     libshims_gxfpd
 
+# Spectrum
+PRODUCT_PACKAGES += \
+   init.spectrum.rc \
+   init.spectrum.sh
+
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
