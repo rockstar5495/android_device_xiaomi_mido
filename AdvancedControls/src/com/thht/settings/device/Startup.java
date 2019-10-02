@@ -28,6 +28,8 @@ import android.os.Handler;
 import java.lang.Runnable;
 import android.util.Log;
 
+import com.thht.settings.device.dirac.AudioEnhancerService;
+
 
 public class Startup extends BroadcastReceiver {
 
@@ -49,5 +51,7 @@ public class Startup extends BroadcastReceiver {
               }
            }, 0);
         } 
+        // Start dirac service
+        context.startService(new Intent(context, AudioEnhancerService.class));
     }
 }

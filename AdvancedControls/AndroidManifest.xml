@@ -25,6 +25,18 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.thht.settings.device.dirac.DiracActivity"
+            android:label="@string/dirac_title"
+            android:theme="@android:style/Theme.DeviceDefault.Settings">
+            <intent-filter>
+		        <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                       android:value="com.android.settings.category.ia.sound" />
+            <meta-data android:name="com.android.settings.summary"
+                       android:resource="@string/dirac_summary" />
+        </activity>
         <receiver android:name="com.thht.settings.device.Startup"
             android:directBootAware="true"
             android:enabled="true"
@@ -39,5 +51,19 @@
             android:enabled="true"
             android:exported="true">
 				</service>
+        <service
+            android:name="com.thht.settings.device.dirac.AudioEnhancerService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+        <service
+            android:name="com.thht.settings.device.dirac.DiracTileService"
+            android:icon="@drawable/dirac_qs_tile_icon"
+            android:label="@string/dirac_qs_tile_title"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
     </application>
 </manifest>
