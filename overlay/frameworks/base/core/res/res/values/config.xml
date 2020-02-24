@@ -646,4 +646,10 @@
     <!-- Whether device needs to wait for Qualcomm MPCTL service to start
          before setting power profiles on boot. -->
     <bool name="config_waitForMpctlOnBoot">true</bool>
+
+    <!-- Smart Charing is available for Xiaomi Redmi Note 4 -->
+    <bool name="config_smartChargingAvailable">true</bool>
+    <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/input_suspend</string>
+    <string name="config_SmartChargingSuspendValue" translatable="false">1</string>
+    <string name="config_SmartChargingResumeValue" translatable="false">0</string>
 </resources>
