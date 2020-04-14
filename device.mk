@@ -147,7 +147,7 @@ PRODUCT_PACKAGES += \
     libcamshim \
     libmm-qcamera \
     libui_shim \
-    Snap
+    libmm-qcamera
 
 # Component overrides
 PRODUCT_COPY_FILES += \
@@ -439,6 +439,7 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     CustomDoze
 
-# Board
-PRODUCT_USES_QCOM_HARDWARE := true
-PRODUCT_BOARD_PLATFORM := msm8996
+# GCam Go
+PRODUCT_PACKAGES += \
+    GCam
+
