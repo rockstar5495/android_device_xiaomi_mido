@@ -605,4 +605,7 @@
 
     <!-- Smart Charing is available for mido -->
     <bool name="config_smartChargingAvailable">true</bool>
+
+    <!-- Wired/BT headset focus mode -->
+    <bool name="config_deviceRingtoneFocusMode">true</bool>
 </resources>
