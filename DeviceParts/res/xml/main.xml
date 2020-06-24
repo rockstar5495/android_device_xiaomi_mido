@@ -42,6 +42,7 @@
             android:key="dirac_preset_pref"
             android:summary="%s"
             android:title="@string/dirac_preset_title" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
