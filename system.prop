@@ -127,3 +127,12 @@ persist.hwc.enable_vds=1
 
 # Zygote Preforking
 persist.device.config.runtime_native.uasp_pool_enabled=true
+
+# RootBeer, Microsoft
+ro.build.tags=release-keys
+
+# SafetyNet
+ro.boot.flash.locked=1
+ro.boot.verifiedbootstate=green
+ro.boot.veritymode=enforcing
+ro.boot.vbmeta.device_state=locked
