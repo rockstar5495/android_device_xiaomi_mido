@@ -243,10 +243,6 @@ wifi.interface=wlan0
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.sys.wfd.virtual=0
 
-# priv-app permissions
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.control_privapp_permissions=false
-
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.fha_enable=true \
