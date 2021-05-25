@@ -596,8 +596,6 @@
 
     <!-- Whether device supports an alt. ambient display -->
     <bool name="config_alt_ambient_display">true</bool>
-<<<<<<< HEAD
-=======
 
     <!-- Maximum number of supported users -->
     <bool name="config_enableMultiUserUI">true</bool>
@@ -619,4 +617,9 @@
 
     <!-- FPSInfoService Fps file path -->
     <string name="config_fpsInfoSysNode" translatable="false">/sys/devices/virtual/graphics/fb0/measured_fps</string>
+
+    <!-- Enables or disables fading edges when marquee is enabled in TextView.
+         Off by befault, since the framebuffer readback used to implement the
+         fading edges is prohibitively expensive on most GPU's. -->
+    <bool name="config_ui_enableFadingMarquee">true</bool>
 </resources>
