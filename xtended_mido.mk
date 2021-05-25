@@ -25,7 +25,7 @@ $(call inherit-product, device/xiaomi/mido/device.mk)
 $(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
 # Xtended Stuff
-XTENDED_BUILD_TYPE := UNOFFICIAL
+XTENDED_BUILD_TYPE := OFFICIAL
 XTENDED_BUILD_MAINTAINER := Pratyaksh.Bharadwaj
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SCREEN_DENSITY := 440
