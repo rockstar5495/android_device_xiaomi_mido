@@ -27,6 +27,7 @@ $(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 # Xtended Stuff
 XTENDED_BUILD_TYPE := OFFICIAL
 XTENDED_BUILD_MAINTAINER := Pratyaksh.Bharadwaj
+XTENDED_BUILD_DONATE_URL := https://paypal.me/pratyakshb5495
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SCREEN_DENSITY := 440
 TARGET_GAPPS_ARCH := arm64
